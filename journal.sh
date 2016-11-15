@@ -22,7 +22,7 @@ function add_entry ()
 
     if [ ! -d "$diary_dir/$year" ]; then
         mkdir "$diary_dir/$year"
-        mkdir "$pdf_dir/$year"
+        mkdir "$pdf_dir/$year" -p
         mkdir "$diary_dir/$year/images"
     fi
 
